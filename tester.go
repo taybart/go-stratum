@@ -1,21 +1,21 @@
 package main
 
 import (
-	"fmt"
-	"log"
+	"github.com/taybartski/log"
 	"net"
 	"net/rpc/jsonrpc"
+	"time"
 )
 
 type Args struct {
 	X, Y int
 }
 
-func main() {
-
+func test() {
+	time.Sleep(1)
 	client, err := net.Dial("tcp", "127.0.0.1:1234")
 	if err != nil {
-		log.Fatal("dialing:", err)
+		log.Error("dialing: %v", err)
 	}
 	// Synchronous call
 	args := &Args{7, 8}
@@ -23,7 +23,7 @@ func main() {
 	c := jsonrpc.NewClient(client)
 	err = c.Call("Calculator.Add", args, &reply)
 	if err != nil {
-		log.Fatal("arith error:", err)
+		log.Error("arith error: %v", err)
 	}
-	fmt.Printf("Result: %d+%d=%d\n", args.X, args.Y, reply)
+	log.Info("Result: %v", reply)
 }
