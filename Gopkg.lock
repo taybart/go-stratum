@@ -3,13 +3,62 @@
 
 [[projects]]
   branch = "master"
+  name = "github.com/goji/httpauth"
+  packages = ["."]
+  revision = "2da839ab0f4df05a6db5eb277995589dadbd4fb9"
+
+[[projects]]
+  name = "github.com/gorilla/context"
+  packages = ["."]
+  revision = "08b5f424b9271eedf6f9f0ce86cb9396ed337a42"
+  version = "v1.1.1"
+
+[[projects]]
+  name = "github.com/gorilla/mux"
+  packages = ["."]
+  revision = "e3702bed27f0d39777b0b37b664b6280e8ef8fbf"
+  version = "v1.6.2"
+
+[[projects]]
+  branch = "master"
+  name = "github.com/sammy007/monero-stratum"
+  packages = [
+    "cnutil",
+    "hashing",
+    "pool",
+    "rpc",
+    "stratum",
+    "util"
+  ]
+  revision = "4401166b35a6b3026f459d58fa6d853b070b7001"
+
+[[projects]]
+  branch = "master"
   name = "github.com/taybartski/log"
   packages = ["."]
-  revision = "ebf9a950e1deb8e9c34ece16637d7b90cc883c27"
+  revision = "d9d2ce65734ca23656c06ed06ad78c64f14b3bef"
+
+[[projects]]
+  branch = "master"
+  name = "github.com/yvasiyarov/go-metrics"
+  packages = ["."]
+  revision = "c25f46c4b94079672242ec48a545e7ca9ebe3aec"
+
+[[projects]]
+  name = "github.com/yvasiyarov/gorelic"
+  packages = ["."]
+  revision = "4dc1bb7ab951bc884feb2c009092b1a454152355"
+  version = "v0.0.6"
+
+[[projects]]
+  branch = "master"
+  name = "github.com/yvasiyarov/newrelic_platform_go"
+  packages = ["."]
+  revision = "9c099fbc30e90de5bb5c5f94aa5fd08f2daeaacd"
 
 [solve-meta]
   analyzer-name = "dep"
   analyzer-version = 1
-  inputs-digest = "b54147b99b677308d8bd0158c12108075aa545c31a43a66c41449ccb9b207a02"
+  inputs-digest = "250c81097ca79df1b35974f9df204d641cb666e9c62f5ff29a7d63c031623913"
   solver-name = "gps-cdcl"
   solver-version = 1
